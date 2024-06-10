@@ -1,4 +1,4 @@
-![image](https://github.com/PabloNobrega1209/ProvaBancoDeDados/assets/148897275/f8474cff-1584-4f6f-a66f-92f928d0d9f0)# Prova Banco De Dados
+## Prova Banco De Dados
 ## 1- Cenário
 
 Uma loja localizada no centro da cidade estava passando por alguns problemas financeiros. A loja se chama SHOP TOY, uma loja que é especializada em brinquedos dos mais diversos tipos (para crianças desde as menores até as mais crescidas) e também para um público mais velho alguns artigos esportivos (como bolas das mais variadas, chuteiras e etc).
