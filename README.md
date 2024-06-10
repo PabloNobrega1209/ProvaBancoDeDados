@@ -21,18 +21,22 @@ Clientes
 
 Atributos: id_cliente, nome, data_nasc, endereco, email, telefone
 Descrição: A entidade Clientes representa todas as pessoas que compram produtos na loja. Cada cliente possui um identificador único, nome, data de nascimento, endereço, email e telefone. Esta entidade é crucial para manter registros detalhados dos clientes e facilitar a personalização do atendimento e campanhas de marketing.
+
 Funcionários
 
 Atributos: id_funcionario, nome, data_nasc, endereco, salario
 Descrição: A entidade Funcionários representa os trabalhadores da loja. Inclui informações como identificador único, nome, data de nascimento, endereço e salário. Esta entidade é essencial para a gestão de recursos humanos, controle de folha de pagamento e acompanhamento de desempenho.
+
 Gerente
 
 Atributos: id_gerente, nome, data_nasc, endereco, telefone, email
 Descrição: A entidade Gerente armazena dados sobre os gerentes da loja. Cada gerente tem um identificador único, nome, data de nascimento, endereço, telefone e email. Os gerentes são responsáveis pela supervisão das operações diárias e pela tomada de decisões estratégicas.
+
 Produtos
 
 Atributos: id_produto, nome, idade_minima, qtde, preco
 Descrição: A entidade Produtos abrange todos os itens vendidos na loja, incluindo brinquedos e artigos esportivos. Cada produto é identificado de forma única e possui atributos como nome, idade mínima recomendada, quantidade em estoque e preço. Esta entidade é fundamental para o controle de inventário e planejamento de reabastecimento.
+
 Compras
 
 Atributos: id_compra, id_produto, id_cliente, data, valor, metodo_pag
