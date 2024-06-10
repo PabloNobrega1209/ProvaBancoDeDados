@@ -204,6 +204,8 @@ INSERT INTO Compras (d_compra, id_produto, id_cliente, data, valor, metodo_pag) 
 
 ![Alt Text](imagens/leitura.png)
 
+aqui pode-se selecionar todos os elementos e dados em uma tabela
+
 ### Operação de atualização (Update):
 ```
 UPDATE Clientes
@@ -212,8 +214,62 @@ WHERE id_cliente = 10;
 ```
 ![Alt Text](imagens/update.png)
 
+aqui pode-se atualizar dados de uma tabela já existente
+
 ### Operação de excluir (Delete):
 ```
 DELETE FROM Clientes
 WHERE id_cliente = 10;
 ```
+
+aqui pode-se deletar dados de uma tabela
+
+## 7- Relatórios
+
+### Consulta 1: Consulta de Clientes por Cidade:
+```
+SELECT * FROM Clientes WHERE endereco LIKE '%Rua dos Cravos, 753' ORDER BY nome;
+```
+![Alt Text](imagens/orderByCity.png)
+
+### Consulta 2: Consulta de Compras por Valor:
+```
+SELECT * FROM Compras WHERE valor < 15 ORDER BY valor;
+```
+![Alt Text](imagens/menorq15.png)
+
+### Consulta 3: Consulta de Funcionários com Salário Menor que 4000:
+```
+SELECT * FROM Funcionarios WHERE salario < 4000;
+```
+![Alt Text](imagens/menorq4.png)
+
+### Consulta 4:Consulta de Compras Pagas com Cartão de Crédito:
+```
+SELECT * FROM Compras WHERE metodo_pag = 'Cartão de Crédito';
+```
+![Alt Text](imagens/credito.png)
+
+### Consulta 5: Consulta de Produtos em Estoque Baixo:
+```
+SELECT nome, qtde
+FROM Produtos
+WHERE qtde < 30;
+```
+![Alt Text](imagens/poucoEstoque.png)
+
+### Consulta 6: Consulta de Compras Realizadas em Dias da Semana:
+```
+SELECT DATENAME(dw, cp.data) AS dia_semana, COUNT(*) AS total_compras
+FROM Compras cp
+GROUP BY DATENAME(dw, cp.data)
+ORDER BY total_compras DESC;
+```
+![Alt Text](imagens/week.png)
+
+### Consulta 7: Selecionar dados por ordem alfabética
+```
+SELECT * FROM Produtos
+ORDER BY nome;
+```
+![Alt Text](imagens/orderBy.png)
