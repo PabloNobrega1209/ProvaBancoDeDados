@@ -11,3 +11,6 @@ O sistema deve ser capaz de registrar todas as transações de compra e venda de
 Para otimizar a gestão do estoque, o sistema deve manter um registro atualizado de todos os produtos disponíveis na loja, incluindo informações como quantidade em estoque, preço de venda, idade mínima recomendada para o produto (se aplicável) e qualquer desconto ou promoção em vigor.
 
 Além disso, o sistema deve permitir o cadastramento e atualização de informações dos clientes e funcionários incluindo nome, data de nascimento, endereço, e-mail e número de telefone
+
+## 2- Modelo Conceitual
+![Alt Text](imagens/modeloConceitual.png)
