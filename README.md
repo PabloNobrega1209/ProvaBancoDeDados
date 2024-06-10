@@ -243,6 +243,20 @@ INSERT INTO Compras (d_compra, id_produto, id_cliente, data, valor, metodo_pag) 
 
 ## 6- Exemplos de CRUD
 
+### Operação de criação (Create):
+```
+CREATE TABLE Clientes (
+    id_cliente INT PRIMARY KEY,
+    nome VARCHAR(30),
+    data_nasc DATE,
+    endereco VARCHAR(50),
+    email VARCHAR(50),
+    telefone VARCHAR(30)
+);
+```
+
+aqui pode-se deletar dados de uma tabela
+
 ### Operação de leitura (Read):
 ``` SELECT * FROM Clientes; ```
 
