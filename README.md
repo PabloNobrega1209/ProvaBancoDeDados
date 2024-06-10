@@ -202,12 +202,15 @@ INSERT INTO Compras (d_compra, id_produto, id_cliente, data, valor, metodo_pag) 
 ### Operação de leitura (Read):
 ``` SELECT * FROM Clientes; ```
 
+![Alt Text](imagens/leitura.png)
+
 ### Operação de atualização (Update):
 ```
 UPDATE Clientes
 SET endereco = 'Av. das Palmeiras, 456'
 WHERE id_cliente = 10;
 ```
+![Alt Text](imagens/update.png)
 
 ### Operação de excluir (Delete):
 ```
