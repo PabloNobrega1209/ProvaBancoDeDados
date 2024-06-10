@@ -156,3 +156,33 @@ INSERT INTO Compras (d_compra, id_produto, id_cliente, data, valor, metodo_pag) 
     (19, 18, 19, '2024-06-19', 49.99, 'Cartão de Crédito'),
     (20, 20, 20, '2024-06-20', 29.99, 'Boleto Bancário');
 
+SELECT * FROM Clientes;
+
+UPDATE Clientes
+SET endereco = 'Av. das Palmeiras, 456'
+WHERE id_cliente = 10;
+
+DELETE FROM Clientes
+WHERE id_cliente = 10;
+
+SELECT * FROM Clientes WHERE endereco LIKE '%Rua dos Cravos, 753' ORDER BY nome;
+
+SELECT * FROM Compras WHERE valor < 15 ORDER BY valor;
+
+SELECT * FROM Funcionarios WHERE salario < 4000;
+
+SELECT * FROM Compras WHERE metodo_pag = 'Cartão de Crédito';
+
+SELECT nome, qtde
+FROM Produtos
+WHERE qtde < 30;
+
+SELECT DATENAME(dw, cp.data) AS dia_semana, COUNT(*) AS total_compras
+FROM Compras cp
+GROUP BY DATENAME(dw, cp.data)
+ORDER BY total_compras DESC;
+
+SELECT * FROM Produtos
+ORDER BY nome;
+
+
