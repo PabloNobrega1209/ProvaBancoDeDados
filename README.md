@@ -291,9 +291,9 @@ WHERE YEAR(GETDATE()) - YEAR(data_nasc) BETWEEN 18 AND 30;
 ![Alt Text](imagens/faixaetaria.png)
 
 ### Consulta 10: Clientes Nascidos Antes de 2000:
-´´´
+```
 SELECT *
 FROM Clientes
 WHERE data_nasc < '2000-01-01';
-´´´
+```
 ![Alt Text](imagens/datanasc.png)
