@@ -14,3 +14,57 @@ Além disso, o sistema deve permitir o cadastramento e atualização de informa�
 
 ## 2- Modelo Conceitual
 ![Alt Text](imagens/modeloConceitual.png)
+
+## 3- Modelo Lógico
+![Alt Text](imagens/modeloLogico.png)
+
+## 4- Modelo Físico 
+
+```
+    CREATE DATABASE SHOP_TOY;
+    USE SHOP_TOY
+
+CREATE TABLE Clientes (
+    id_cliente INT PRIMARY KEY,
+    nome VARCHAR(30),
+    data_nasc DATE,
+    endereco VARCHAR(50),
+    email VARCHAR(50),
+    telefone VARCHAR(30)
+);
+
+CREATE TABLE Funcionarios (
+    id_funcionario INT PRIMARY KEY,
+    nome VARCHAR(30),
+    data_nasc DATE,
+    endereco VARCHAR(50),
+    salario FLOAT
+);
+
+CREATE TABLE Produtos (
+    id_produto INT PRIMARY KEY,
+    nome VARCHAR(30),
+    idade_minima INT,
+    qtde INT,
+    preco FLOAT
+);
+
+CREATE TABLE Gerente (
+    id_gerente INT PRIMARY KEY,
+    nome VARCHAR(30),
+    data_nasc DATE,
+    endereco VARCHAR(50),
+    telefone VARCHAR(15),
+    email VARCHAR(15)
+);
+
+CREATE TABLE Compras (
+    d_compra INT PRIMARY KEY,
+    id_produto INT FOREIGN KEY REFERENCES Produtos(id_produto),
+    id_cliente INT FOREIGN KEY REFERENCES Clientes(id_cliente),
+    data DATE,
+    valor FLOAT,
+    metodo_pag VARCHAR(20)
+);
+
+```
