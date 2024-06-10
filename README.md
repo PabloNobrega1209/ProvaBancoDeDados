@@ -255,7 +255,7 @@ CREATE TABLE Clientes (
 );
 ```
 
-aqui pode-se deletar dados de uma tabela
+aqui pode-se criar dados de uma tabela
 
 ### Operação de leitura (Read):
 ``` SELECT * FROM Clientes; ```
