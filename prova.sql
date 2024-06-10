@@ -185,4 +185,16 @@ ORDER BY total_compras DESC;
 SELECT * FROM Produtos
 ORDER BY nome;
 
+SELECT *
+FROM Clientes
+WHERE MONTH(data_nasc) = 1;
+
+SELECT *
+FROM Clientes
+WHERE YEAR(GETDATE()) - YEAR(data_nasc) BETWEEN 18 AND 30;
+
+SELECT *
+FROM Clientes
+WHERE data_nasc < '2000-01-01';
+
 
