@@ -196,3 +196,21 @@ INSERT INTO Compras (d_compra, id_produto, id_cliente, data, valor, metodo_pag) 
     (20, 20, 20, '2024-06-20', 29.99, 'Boleto Bancário');
 
 ```
+
+## 6- Exemplos de CRUD
+
+### Operação de leitura (Read):
+``` SELECT * FROM Clientes; ```
+
+### Operação de atualização (Update):
+```
+UPDATE Clientes
+SET endereco = 'Av. das Palmeiras, 456'
+WHERE id_cliente = 10;
+```
+
+### Operação de excluir (Delete):
+```
+DELETE FROM Clientes
+WHERE id_cliente = 10;
+```
