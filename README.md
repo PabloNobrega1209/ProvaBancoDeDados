@@ -1,4 +1,4 @@
-# Prova Banco De Dados
+![image](https://github.com/PabloNobrega1209/ProvaBancoDeDados/assets/148897275/f8474cff-1584-4f6f-a66f-92f928d0d9f0)# Prova Banco De Dados
 ## 1- Cenário
 
 Uma loja localizada no centro da cidade estava passando por alguns problemas financeiros. A loja se chama SHOP TOY, uma loja que é especializada em brinquedos dos mais diversos tipos (para crianças desde as menores até as mais crescidas) e também para um público mais velho alguns artigos esportivos (como bolas das mais variadas, chuteiras e etc).
@@ -226,7 +226,7 @@ aqui pode-se deletar dados de uma tabela
 
 ## 7- Relatórios
 
-### Consulta 1: Consulta de Clientes por Cidade:
+### Consulta 1: Consulta de Clientes por Endereço:
 ```
 SELECT * FROM Clientes WHERE endereco LIKE '%Rua dos Cravos, 753' ORDER BY nome;
 ```
@@ -273,3 +273,27 @@ SELECT * FROM Produtos
 ORDER BY nome;
 ```
 ![Alt Text](imagens/orderBy.png)
+
+### Consulta 8: Consulta de Clientes por Mês de Aniversário:
+```
+SELECT *
+FROM Clientes
+WHERE MONTH(data_nasc) = 1;
+```
+![Alt Text](imagens/aniversarioMes.png)
+
+### Consulta 9: Consulta de Clientes por Faixa Etária:
+```
+SELECT *
+FROM Clientes
+WHERE YEAR(GETDATE()) - YEAR(data_nasc) BETWEEN 18 AND 30;
+```
+![Alt Text](imagens/faixaetaria.png)
+
+### Consulta 10: Clientes Nascidos Antes de 2000:
+´´´
+SELECT *
+FROM Clientes
+WHERE data_nasc < '2000-01-01';
+´´´
+![Alt Text](imagens/datanasc.png)
