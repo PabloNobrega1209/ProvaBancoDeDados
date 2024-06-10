@@ -15,8 +15,48 @@ Além disso, o sistema deve permitir o cadastramento e atualização de informa�
 ## 2- Modelo Conceitual
 ![Alt Text](imagens/modeloConceitual.png)
 
+O modelo conceitual do banco de dados da loja SHOP TOY é projetado para representar de forma abstrata e clara as principais entidades e seus relacionamentos necessários para a operação eficiente da loja. Este modelo serve como a base para a implementação física do banco de dados, garantindo que todas as necessidades de negócios sejam atendidas de maneira organizada e compreensível.
+
+Clientes
+
+Atributos: id_cliente, nome, data_nasc, endereco, email, telefone
+Descrição: A entidade Clientes representa todas as pessoas que compram produtos na loja. Cada cliente possui um identificador único, nome, data de nascimento, endereço, email e telefone. Esta entidade é crucial para manter registros detalhados dos clientes e facilitar a personalização do atendimento e campanhas de marketing.
+Funcionários
+
+Atributos: id_funcionario, nome, data_nasc, endereco, salario
+Descrição: A entidade Funcionários representa os trabalhadores da loja. Inclui informações como identificador único, nome, data de nascimento, endereço e salário. Esta entidade é essencial para a gestão de recursos humanos, controle de folha de pagamento e acompanhamento de desempenho.
+Gerente
+
+Atributos: id_gerente, nome, data_nasc, endereco, telefone, email
+Descrição: A entidade Gerente armazena dados sobre os gerentes da loja. Cada gerente tem um identificador único, nome, data de nascimento, endereço, telefone e email. Os gerentes são responsáveis pela supervisão das operações diárias e pela tomada de decisões estratégicas.
+Produtos
+
+Atributos: id_produto, nome, idade_minima, qtde, preco
+Descrição: A entidade Produtos abrange todos os itens vendidos na loja, incluindo brinquedos e artigos esportivos. Cada produto é identificado de forma única e possui atributos como nome, idade mínima recomendada, quantidade em estoque e preço. Esta entidade é fundamental para o controle de inventário e planejamento de reabastecimento.
+Compras
+
+Atributos: id_compra, id_produto, id_cliente, data, valor, metodo_pag
+Descrição: A entidade Compras registra todas as transações efetuadas pelos clientes. Cada compra é associada a um cliente e a um ou mais produtos, contendo detalhes como data da compra, valor e método de pagamento. Esta entidade é vital para o acompanhamento das vendas e análise do comportamento do consumidor.
+
 ## 3- Modelo Lógico
 ![Alt Text](imagens/modeloLogico.png)
+
+O banco de dados da loja SHOP TOY foi projetado para gerenciar eficientemente as operações relacionadas à venda de brinquedos e artigos esportivos, atendendo tanto crianças quanto adultos. A estrutura do banco de dados facilita a manipulação de informações cruciais sobre clientes, funcionários, gerentes, produtos e compras, permitindo uma gestão eficaz e um suporte robusto para decisões de negócios.
+
+Clientes:
+A tabela Clientes armazena informações sobre os clientes da loja, incluindo o identificador único (id_cliente), nome, data de nascimento (data_nasc), endereço, email e telefone. Esta tabela é fundamental para registrar e consultar dados pessoais dos clientes, ajudando na personalização do atendimento e na segmentação de marketing.
+
+Funcionários:
+A tabela Funcionários contém dados dos funcionários da loja, como id_funcionario, nome, data de nascimento, endereço e salário. Essa tabela auxilia na gestão de recursos humanos, permitindo a administração das informações dos funcionários e o acompanhamento do pagamento de salários.
+
+Gerente:
+A tabela Gerente guarda os detalhes dos gerentes responsáveis pela operação da loja, incluindo id_gerente, nome, data de nascimento, endereço, telefone e email. Os gerentes são essenciais para a supervisão das operações diárias e para garantir que a loja funcione de maneira eficiente.
+
+Produtos:
+A tabela Produtos armazena informações sobre os itens vendidos na loja, com campos como id_produto, nome, idade mínima recomendada, quantidade (qtde) e preço. Essa tabela permite um controle detalhado do estoque, ajudando a loja a manter um inventário atualizado e a planejar a reposição de produtos.
+
+Compras:
+A tabela Compras registra as transações realizadas pelos clientes, incluindo id_compra, id_produto, id_cliente, data da compra, valor da compra e método de pagamento (metodo_pag). Esta tabela é crucial para analisar o comportamento de compra dos clientes, monitorar as vendas e gerar relatórios financeiros.
 
 ## 4- Modelo Físico 
 
